@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flickr Search</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.9.7/angular-material.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body ng-app="flickrApp" ng-controller="ListController" layout="column" layout-align="top center">
+	<md-toolbar>
+	<div class="md-toolbar-tools">
+		<span class="md-flex">Flickr Search</span>
+	</div>
+</md-toolbar>
+<md-content layout="column" layout-align="center center">
+<div class="app-content"> 
+
+	<form ng-submit="search()">
+		<div ng-show="!isSearching">
+		<input type="text" placeHolder="Search for" ng-model="searchTerm" class="long"> </input>
+		</div>
+		<md-progress-circular md-theme="blue" md-mode="indeterminate" ng-if="isSearching"> </md-progress-circular>
+	</form>
+	<md-card ng-repeat="picture in results.photos.photo">
+		<img ng-src="https://farm{{picture.farm}}.staticflickr.com/{{picture.server}}/{{picture.id}}_{{picture.secret}}_b.jpg" alt="" class="md-card-image" />
+		<h3>{{picture.title}}</h3>
+	</md-card>
+</div>
+</md-content>
+<!-- Angular Material Dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-aria.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.4/hammer.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.9.7/angular-material.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
