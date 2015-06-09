@@ -58,3 +58,7 @@ body {
 .social .fa-facebook:hover { /* round facebook icon*/
     background: #4060A5;
 }
+
+.social .fa-github:hover { /* round github icon*/
+    background: #343434;
+}
