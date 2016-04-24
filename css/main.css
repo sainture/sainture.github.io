@@ -1,5 +1,18 @@
+* {
+    font-family: Georgia, serif;
+    color:#000;
+}
 body { 
     padding-top: 65px; 
+}
+#nav_collapse {
+    letter-spacing: 1px;
+}
+a.navbar-brand {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: default;
 }
 
 .social {
