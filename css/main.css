@@ -5,7 +5,12 @@
 body { 
     padding-top: 65px; 
 }
-#nav_collapse {
+body p {
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.4px;
+}
+#nav_collapse, #tab-about h4{
     letter-spacing: 1px;
 }
 a.navbar-brand {
