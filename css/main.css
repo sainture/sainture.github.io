@@ -1,38 +1,15 @@
-* {
-    font-family: Georgia, serif;
-    color:#000;
-}
 body { 
-    padding-top: 65px; 
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 65px;
 }
-body p {
-    font-size: 15px;
-    line-height: 150%;
-    letter-spacing: 0.4px;
-}
+
 #nav_collapse, #tab-about h4{
     letter-spacing: 1px;
-}
-a.navbar-brand {
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    cursor: default;
 }
 
 .social {
     margin: 0;
-    padding: 0;
-}
-
-.social ul {
-    margin: 0;
     padding: 5px;
-}
-
-.social ul li {
-    margin: 5px;
-    list-style: none outside none;
     display: inline-block;
 }
 
@@ -67,14 +44,6 @@ a.navbar-brand {
 
 .social .fa-linkedin:hover { /* round linkedin icon*/
     background: #0094BC;
-}
-
-.social .fa-youtube:hover { /* round youtube icon*/
-    background: #FF1F25;
-}
-
-.social .fa-facebook:hover { /* round facebook icon*/
-    background: #4060A5;
 }
 
 .social .fa-github:hover { /* round github icon*/
